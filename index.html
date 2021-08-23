@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="normalize.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+
+</head>
+
+<body>
+
+    <div class="bg-img">
+        <!--Background image behind header and section-->
+        <header class="header">
+            <div class="container">
+                <nav class="nav flex">
+                    <a href="#">
+                        <img src="./images/logo.svg" alt="company logo" class="logo">
+                    </a>
+                    <a href="#" class="nav__btn"> Try It Free  </a>
+                </nav>
+            </div>
+        </header>
+        <section class="hero flex container">
+            <div class="content__wrapper">
+                <h1 class="hero__title">Build The Community Your Fans Will Love </h1>
+                <p class="hero__disc">
+                    Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+                </p>
+                <a href="#" class="cta__btn cta__btn--hero">  Get Started For Free </a>
+            </div>
+            <div class="img__wrapper">
+                <img class="hero__img" src="./images/illustration-mockups.svg" alt="" aria-hidden="true">
+            </div>
+        </section>
+    </div>
+    <main>
+        <section class=" features container">
+
+            <div class="card card--together flex">
+                <img class="card__img" src="./images/illustration-grow-together.svg" alt="" aria-hidden="true">
+                <div class="card-content">
+
+
+                    <h2 class="card__title">
+                        Grow Together
+                    </h2>
+                    <p class="card__disc">
+                        Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
+                    </p>
+                </div>
+            </div>
+            <div class="card card--following-conversation flex ">
+                <img class="card__img" src="./images/illustration-flowing-conversation.svg" alt="" aria-hidden="true">
+                <div class="card-content">
+
+
+                    <h2 class="card__title">
+
+                        Flowing Conversations
+                    </h2>
+                    <p class="card__disc">
+
+                        You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
+                    </p>
+                </div>
+            </div>
+            <div class="card card--your-users flex">
+                <img class="card__img" src="./images/illustration-your-users.svg" alt="" aria-hidden="true">
+                <div class="card-content">
+                    <h2 class="card__title">
+                        Your Users
+                    </h2>
+                    <p class="card__disc">
+                        It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="build-community container">
+            <div class="build-community__content">
+                <h2 class="build-community__title">
+                    Ready To Build Your Community?
+                </h2>
+                <a href="#" class="cta__btn cta__btn--build"> Get Started For Free </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+
+
+            <img class="footer__logo" src="./images/logo.svg" alt="company logo">
+            <div class="footer__content">
+
+                <ul class="info__list">
+                    <li class="info__item flex">
+                        <img class="icon-location" src="./images/icon-location.svg" alt="" aria-hidden="true">
+                        <p class="info__disc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                    </li>
+                    <li class="info__item">
+                        <img src="./images/icon-phone.svg" alt="" aria-hidden="true">
+                        <a class="link info__link" href="tel:+1-543-123-45-67">+1-543-123-45-67</a>
+                    </li>
+                    <li class="info__item">
+                        <img src="./images/icon-email.svg" alt="" aria-hidden="true">
+
+                        <a class="link info__link" href="mailto:example@huddle.com">example@huddle.com</a>
+                    </li>
+
+                </ul>
+                <div class="footer__nav">
+
+
+                    <ul class="footer-nav__list footer-nav__list-first">
+                        <li class="footer-nav__item">
+                            <a href="" class="link footer-nav__link">About Us</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="" class="link footer-nav__link"> What We Do</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="" class="link footer-nav__link"> FAQ</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-nav__list footer-nav__list-second">
+                        <li class="footer-nav__item">
+                            <a href="" class="link footer-nav__link">Career</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="" class="link footer-nav__link">Blog</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="" class="link footer-nav__link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="social-container flex">
+
+
+
+                        <ul class=" social-icons__list flex">
+                            <li class="social-icons__items">
+                                <!-- Put fontawsome icons as pseudo element selectors -->
+                                <a class="link social-icons__link social__icon--facebook" href="#" rel="noopener" target="_blank" aria-labelledby="fb-aria">
+
+                                    <span id="fb-aria" hidden>Facebook
+                                 </span>
+                                </a>
+                            </li>
+                            <li class="social-icons__items">
+                                <a class="link social-icons__link icon social__icon--twitter" href="#" rel="noopener" target="_blank" aria-labelledby="tw-aria">
+                                    <span id=tw-aria hidden>Twitter</span>
+                                </a>
+                            </li>
+                            <li class="social-icons__items">
+                                <a class="link social-icons__link  social__icon--instagram" href="#" rel="noopener" target="_blank" aria-labelledby="ins-aria">
+                                    <span id="ins-aria" hidden>Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="copywrite__disc">
+                            &copy; Copyright 2018 Huddle. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/muhammadshajjar" target="_blank">Muhammad Shajjar</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
