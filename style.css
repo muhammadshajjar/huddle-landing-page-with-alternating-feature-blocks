@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 versions
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 *,
 *::after,
@@ -42,8 +35,8 @@
     --fs-bold: 700;
 }
 
-:focus {
-    outline: 2px solid var(--primary-Pink);
+ :focus {
+    outline: 2px dashed var(--primary-Pink);
 }
 
 .flex {
@@ -74,8 +67,6 @@ body {
 .bg-img {
     background-image: url("./images/bg-hero-mobile.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: var(--Very-Cyan);
 }
 
 .hero__img,
@@ -84,7 +75,8 @@ body {
 }
 
 .header {
-    padding: 1.75rem 1rem 0 1rem
+    padding: 1.75rem 1rem 0 1rem;
+    background-color: hsl(193deg 100% 96% / 63%);
 }
 
 .nav {
@@ -117,6 +109,10 @@ body {
     border-radius: 1.875rem;
 }
 
+.hero-contianer {
+    background-color: hsl(193deg 100% 96% / 63%);
+}
+
 .hero {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -129,7 +125,7 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
-    padding: 0 2.9375rem 3.875rem 2.9375rem;
+    padding: 0 2.9375rem 4rem 2.9375rem;
     line-height: 1.5;
 }
 
@@ -419,7 +415,7 @@ Attribution
     color: var( --primary-Pink);
 }
 
-@media(min-width:756px) {
+@media screen and (min-width:47.5em) {
     .bg-img {
         background-image: url("./images/bg-hero-desktop.svg");
     }
@@ -451,12 +447,6 @@ Attribution
     }
     .card__title {
         margin-top: 0;
-    }
-    .card__title {
-        margin-top: 5.87rem;
-    }
-    .card__disc {
-        margin-bottom: 5.87rem;
     }
     /*------------
     Footer
@@ -494,7 +484,7 @@ Attribution
     }
 }
 
-@media (min-width:1000px) {
+@media screen and (min-width:62.5em) {
     .logo {
         height: 2rem;
     }
@@ -513,9 +503,8 @@ Attribution
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        margin-top: 4.125rem;
         text-align: left;
-        padding: 0 4.94rem 4.13rem 4.94rem;
+        padding: 4.125rem 4.94rem 4.13rem 4.94rem;
     }
     .content__wrapper {
         width: 41%;
@@ -534,11 +523,17 @@ Attribution
         padding-top: 1.125rem;
         padding-bottom: 1.125rem;
     }
-    .features {
-        padding: 9.875rem 6.375rem 4rem 6.375rem;
-    }
     .card__title {
         font-size: 1.875rem;
+    }
+    .features {
+        padding: 9.875rem 2rem 4rem 2rem;
+    }
+    .card__title {
+        margin-top: 5.87rem;
+    }
+    .card__disc {
+        margin-bottom: 5.87rem;
     }
     .build-community__content {
         padding-top: 4.75rem;
@@ -559,8 +554,13 @@ Attribution
     }
 }
 
-@media (min-width:1290px) {
-    /*Footer*/
+@media screen and (min-width:80.625rem) {
+    .features {
+        padding: 9.875rem 6.375rem 4rem 6.375rem;
+    }
+    /*----------
+    Footer*
+    ------------*/
     .info__list {
         width: 34%;
         margin-right: 5.85rem;
